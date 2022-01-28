@@ -1,0 +1,15 @@
+[package]
+name = "ws2812-rpi"
+version = "0.0.1"
+authors = ["Nathan Samson <nathan@nathansamson.be>"]
+edition = "2018"
+license = "MIT"
+description = "Wrapper for ws281x library using bindgen to track upstream implementing the smart-leds trait"
+repository = "https://github.com/rpi-ws281x/rpi-ws281x-rust"
+
+[dependencies]
+smart-leds-trait = "0.2"
+
+[build-dependencies]
+bindgen = { version = "0.59", default-features = false }
+cc = "1.0"
